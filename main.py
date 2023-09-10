@@ -4,10 +4,11 @@ from pygame.locals import *
 # Pygame Initialization
 pygame.init()
 pygame.display.set_caption('Promodoro Timer')
-catppucin_cat = pygame.transform.scale(pygame.image.load("catppuccin.png"), (64, 64))
+catppucin_cat = pygame.transform.scale(pygame.image.load("assets\catppuccin.png"), (64, 64))
 #cat_64 = pygame.image.load('catppuccin_64.png')
-nyan_cat = pygame.transform.scale(pygame.image.load("nyan.png"), (64, 64))
-timer = pygame.image.load('promodoro_01.png')
+pause = pygame.transform.scale(pygame.image.load("assets\pause2.png"), (64, 64))
+play = pygame.transform.scale(pygame.image.load("assets\play2.png"), (64, 64))
+timer = pygame.image.load('assets\promodoro_01.png')
 
 pygame.display.set_icon(timer)
 
@@ -55,7 +56,7 @@ def pomodoro_timer(task_name):
     for stage in timeline:
         if "promodoro" in stage:
             task_status = f"Task: {task_name}"
-            current_cat = nyan_cat
+            current_cat = pause
         else:
             task_status = "Break time"
             current_cat = catppucin_cat
@@ -66,14 +67,14 @@ def pomodoro_timer(task_name):
 
         # NEW COUNTDOWN LOOP
         run = True
+        state = "play"
         while run:
             for event in pygame.event.get():
                 if minutes == 0 and seconds == 0:
                     run = False
-                #print('Event: ' + str(event.type))
                 if event.type == pygame.USEREVENT:
-                    if seconds > 0:
-                        seconds -= 1  # print('{}:{}'.format(minutes, seconds))
+                    if seconds > 0 and current_cat == pause:
+                        seconds -= 1
                     gameDisplay.fill(yankees_blue)
 
                     # Display the Task input by the User
@@ -97,10 +98,16 @@ def pomodoro_timer(task_name):
                     if cat_position.collidepoint(event.pos):
                         print('meow')
                         # Need this to pause the timer
+                        if current_cat == pause:
+                            current_cat = play
+                        else:
+                            current_cat = pause
+
                 elif event.type == pygame.QUIT:
                     run = False
                 pygame.display.update()
                 clock.tick(60)
+
 
 
 if __name__ == "__main__":
