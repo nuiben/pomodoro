@@ -1,5 +1,7 @@
 
-# Promodoro
+<p align="center">
+  <img src="assets/logo.png">
+</p>
 
 A Promodoro Timer desktop application built in Python, using PyGame to create interactive UI elements.
 
