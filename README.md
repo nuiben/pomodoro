@@ -3,11 +3,20 @@
   <img src="assets/logo.png">
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/github/license/nuiben/promodoro?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/nuiben/promodoro?style=for-the-badge">
+  <img src="https://img.shields.io/github/issues/nuiben/promodoro?color=blueviolet&style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/nuiben/promodoro?color=teal&style=for-the-badge">
+  <img src="https://img.shields.io/github/issues-pr/nuiben/promodoro?color=tomato&style=for-the-badge">
+</p>
+
+
 A Promodoro Timer desktop application built in Python, using PyGame to create interactive UI elements.
 
 ## To-Do:
 
-09-10-23
+09-11-23
 - [ ] Add a skip button
 - [ ] Debug: Exiting application sometimes skips to break and doesn't change state from pause to play.
 - [ ] Replace snippet with GIF
@@ -18,4 +27,4 @@ A Promodoro Timer desktop application built in Python, using PyGame to create in
 
 ## Screenshots
 
-![App Screenshot](visual1.png)
+![App Screenshot](assets/visual1.png)
