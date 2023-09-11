@@ -8,6 +8,7 @@ catppucin_cat = pygame.transform.scale(pygame.image.load("assets\catppuccin.png"
 #cat_64 = pygame.image.load('catppuccin_64.png')
 pause = pygame.transform.scale(pygame.image.load("assets\pause.png"), (64, 64))
 play = pygame.transform.scale(pygame.image.load("assets\play.png"), (64, 64))
+skip = pygame.transform.scale(pygame.image.load("assets\skip.png"), (64, 64))
 timer = pygame.image.load('assets\promodoro_01.png')
 
 pygame.display.set_icon(timer)
@@ -36,7 +37,9 @@ gameDisplay = pygame.display.set_mode((display_width, display_height))
 
 def display_cat(cat):
     gameDisplay.blit(cat, (
-    (display_width / 2) - 32, display_height * 0.5))  # Promodoro_05 is 64x64: -32 is centering the image.
+    (display_width / 2) - 72, display_height * 0.5))  # Promodoro_05 is 64x64: -32 is centering the image.
+    gameDisplay.blit(skip, (
+        (display_width / 2) + 8, display_height * 0.5))
 
 
 # Function to display text
