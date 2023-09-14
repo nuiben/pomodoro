@@ -18,6 +18,8 @@ A Promodoro Timer desktop application built in Python, using PyGame to create in
 
 09-12-23
 - [x] Add a skip button
+
+09-14-23
 - [ ] Debug: Exiting application sometimes skips to break and doesn't change state from pause to play.
 - [ ] Replace snippet with GIF
 
