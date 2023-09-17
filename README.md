@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="assets/logo.png">
+  <img src="assets/images/logo.png">
 </p>
 
 <p align="center">
@@ -22,4 +22,6 @@ As of 09-17-2023, I've decided that converting this project to Java offers perfo
 
 ## Screenshots
 
-![App Screenshot](assets/visual1.png)
+<p align="center">
+  <img src="assets/images/visual1.png">
+</p>
