@@ -14,6 +14,8 @@
 
 A Promodoro Timer desktop application built in Python, using PyGame to create interactive UI elements.
 
+As of 09-17-2023, I've decided that converting this project to Java offers performance benefits and the upside of already knowing JFX.
+
 ## Optimizations
 - [ ] Conference with UI artist to discuss how to achieve button press effect with shadows.
 - [ ] Update main.py so there is no delay on button press
