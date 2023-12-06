@@ -12,9 +12,7 @@
 </p>
 
 
-A Promodoro Timer desktop application built in Python, using PyGame to create interactive UI elements.
-
-As of 09-17-2023, I've decided that converting this project to Java offers performance benefits and the upside of already knowing JFX.
+A Pomodoro Timer desktop application built in Python, using PyGame to create interactive UI elements.
 
 ## Optimizations
 - [ ] Conference with UI artist to discuss how to achieve button press effect with shadows.
